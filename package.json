@@ -1,0 +1,27 @@
+{
+  "name": "nodebb-theme-material-neho",
+  "version": "2.13.4",
+  "nbbpm": {
+    "compatibility": "^1.11.0"
+  },
+  "description": "Material Design theme for NodeBB",
+  "main": "theme.less",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/byNeHo/nodebb-theme-material"
+  },
+  "keywords": [
+    "nodebb",
+    "material",
+    "material design",
+    "theme",
+    "themes"
+  ],
+  "author": {
+    "name": "NeHo",
+    "email": ""
+  },
+  "bugs": {
+    "url": "https://github.com/byNeHo/nodebb-theme-material"
+  }
+}
