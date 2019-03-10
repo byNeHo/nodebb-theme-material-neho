@@ -38,7 +38,7 @@
 					<div class="card-body card-padding search-options collapse <!-- IF expandSearch -->in<!-- ENDIF expandSearch -->">
 						<div class="form-group post-search-item">
 							<div class="row">
-								<div class="col-md-3">
+								<div class="col-md-4">
 									<label>[[search:match-words]]</label>
 									<div class="fg-line">
 										<select id="match-words-filter" class="form-control">
@@ -47,13 +47,17 @@
 										</select>
 									</div>
 								</div>
-								<div class="col-md-3">
+								<div class="col-md-4">
 									<label>[[search:posted-by]]</label>
-									<input type="text" class="form-control" id="posted-by-user" placeholder="[[search:posted-by]]">
+									<div class="fg-line">
+										<input type="text" class="form-control" id="posted-by-user" placeholder="[[search:posted-by]]">
+									</div>
 								</div>
-								<div class="col-md-6">
+								<div class="col-md-4">
 									<label>[[search:has-tags]]</label>
-									<input type="text" class="form-control" id="has-tags">
+									<div class="fg-line">
+										<input type="text" class="form-control" id="has-tags">
+									</div>
 								</div>
 							</div>
 						</div>

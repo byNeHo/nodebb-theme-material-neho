@@ -70,18 +70,21 @@
                 </a>
             </li>
             <!-- IF config.searchEnabled -->
-            <li>
+            <li class="search-menu">
                 <form id="search-form" class="hidden-xs" role="search" method="GET">
                     <div class="hidden" id="search-fields">
                         <div class="form-group">
                             <div class="fg-line">
-                                <input type="text" class="form-control" placeholder="[[global:search]]" name="query" value="">
+                                <input type="text" class="form-control" placeholder="[[global:search]]" name="query" value="" onfocus="this.value=''">
+                                <a href="#" class="advanced-search-link"><i class="fa fa-gears fa-fw"></i></a>
                             </div>
                         </div>
-                        <button type="submit" class="btn btn-default hide">[[global:search]]</button>
                     </div>
-                    <button id="search-button" type="button" class="btn btn-link"><i class="fa fa-search fa-fw"></i></button>
+                    <button id="search-button" type="button" class="btn btn-link waves-effect waves-button"><i class="fa fa-search fa-fw"></i></button>
                 </form>
+                <ul id="quick-search-results" class="dropdown-menu quick-search-results dropdown-menu-lg pull-right hidden">
+                    <!-- IMPORT partials/quick-search-results.tpl -->
+                </ul>
             </li>
             <!-- ENDIF config.searchEnabled -->
 

@@ -1,12 +1,12 @@
 .search-result-text {
- 	max-height: 250px;
-  	overflow: hidden;
-  	position: relative;
-  	font-size: 14px;
+	max-height: 250px;
+	overflow: hidden;
+	position: relative;
+	font-size: 14px;
 }
 
 .search .listview .lv-footer {
-    margin-top: 0;
+	margin-top: 0;
 }
 
 #results .user-picture {
@@ -20,8 +20,64 @@
 	border: none;
 }
 
-#search-form i {
-	color: #fff;
+.search-menu{
+	max-height:35px;	
+}
+
+#search-form {
+	i, input {
+		color: #fff;
+	}
+
+	::placeholder {
+		color: #fff;
+		opacity: 1;
+	}
+
+	:-ms-input-placeholder {
+	  color: #fff;
+	}
+
+	::-ms-input-placeholder {
+	  color: #fff;
+	}
+
+	#search-button {
+		transition-duration: .2s;
+		transition-timing-function: ease;
+		overflow: hidden;
+		color: #fff !important;
+	}
+			
+	#search-button.hidden {
+		display: inline-block !important;
+		visibility: visible !important;
+		max-width: 0;
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	#search-fields {
+		width: auto;
+		max-width: 100%;
+		padding: 0 !important;
+		margin:0 !important;
+		overflow: hidden;
+		position:relative;
+		float: right;
+		display: inline-block !important;
+		visibility: visible !important;
+		&.hidden {
+			max-width: 0;
+		}
+	}
+
+	.advanced-search-link {
+		position: absolute;
+		right: 25px;
+		top:5px;
+		color:#fff !important;
+	}
 }
 
 @media screen and (min-width: @screen-sm-min) {
@@ -39,6 +95,33 @@
 
 	.lv-item.media {
 		padding: 0;
+	}
+}
+
+.quick-search-results {
+	max-width: 400px;
+	max-height: 500px;
+	overflow-x: hidden;
+	overflow-y: auto;
+
+	a {
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		overflow: hidden;
+	}
+	.quick-search-title {
+		font-weight: 600;
+	}
+	.post-info {
+		font-size: 12px;
+		.fa-stack {
+			font-size: 10px;
+			border-radius: 50%;
+		}
+	}
+	.snippet {
+		word-break: break-word;
+		white-space: normal;
 	}
 }
 
