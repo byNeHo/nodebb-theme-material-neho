@@ -33,7 +33,21 @@
                         </a>
                     </li>
                     <!-- ENDIF !config.loggedIn -->
-
+                    <li>
+						<form id="search-form" class="navbar-form navbar-right hidden-xs" role="search" method="GET">
+							<button id="search-button" type="button" class="btn btn-link"><i class="fa fa-search fa-fw" title="[[global:header.search]]"></i></button>
+							<div class="hidden" id="search-fields">
+								<div class="form-group">
+									<input autocomplete="off" type="text" class="form-control" placeholder="[[global:search]]" name="query" value="">
+									<a href="#"><i class="fa fa-gears fa-fw advanced-search-link"></i></a>
+								</div>
+								<button type="submit" class="btn btn-default hide">[[global:search]]</button>
+							</div>
+						</form>
+						<ul id="quick-search-results" class="dropdown-menu quick-search-results hidden">
+							<!-- IMPORT partials/quick-search-results.tpl -->
+						</ul>
+					</li>
                     <li class="visible-xs">
                         <a href="{relative_path}/search">
                             <i class="fa fa-search fa-fw"></i> [[global:search]]
