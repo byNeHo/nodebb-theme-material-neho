@@ -135,6 +135,8 @@
                 border-top: @lv-item-border;
             }
         }
+
+        
         
         .dropdown-menu {
         	padding: 0;
@@ -246,7 +248,6 @@
 }
 
 .unread-count:after {
-	content: attr(data-content);
   	position: relative;
 	color: #fff;
 	font-style: normal;
@@ -264,6 +265,10 @@
 	-webkit-animation-fill-mode: both;
 	animation-fill-mode: both;
 	font-family: "Roboto","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.unread-count[data-content]:not([data-content=""]):not([data-content="0"]):after {
+	content: attr(data-content);
 }
 
 .pagination-block {
